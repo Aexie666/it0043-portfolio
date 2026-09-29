@@ -1,0 +1,110 @@
+:root {
+   --primary-color: hotpink;
+   --text-color: #222222;
+   --background-color: #fff5fa;
+   --small-space: 10px;
+   --medium-space: 20px;
+   --large-space: 30px;
+   --small-text: 14px;
+   --normal-text: 16px;
+   --large-text: 32px;
+}
+
+body {
+
+    font-family: Arial, sans-serif;
+
+    font-size: var(--normal-text);
+
+    line-height: 1.6;
+
+    color: var(--text-color);
+
+}
+
+h1 {
+
+    font-size: var(--large-text);
+
+    font-weight: 700;
+
+}
+
+h2 {
+
+    font-size: 24px;
+
+    font-weight: 700;
+
+}
+
+p {
+
+    font-size: var(--normal-text);
+
+}
+ 
+section {
+
+    margin: var(--medium-space);
+
+    padding: var(--medium-space);
+
+}
+
+main {
+
+    padding: var(--medium-space);
+
+}
+ 
+header {
+   background-color: var(--primary-color);
+   color: white;
+   padding: var(--medium-space);
+}
+footer {
+   background-color: var(--primary-color);
+   color: white;
+   padding: var(--medium-space);
+}
+
+nav {
+   display: flex;
+   gap: var(--medium-space);
+   padding: var(--small-space);
+}
+nav a {
+   color: var(--text-color);
+   text-decoration: none;
+}
+nav a:hover {
+   text-decoration: underline;
+}
+nav a:focus {
+   outline: 2px solid var(--primary-color);
+}
+
+/* Card component */
+.card {
+   padding: var(--medium-space);
+   margin: var(--medium-space);
+   background-color: white;
+   border: 2px solid var(--primary-color);
+   border-radius: 10px;
+}
+/* Button component */
+.button {
+   display: inline-block;
+   padding: var(--small-space);
+   background-color: var(--primary-color);
+   color: white;
+   text-decoration: none;
+   border-radius: 5px;
+}
+.button:hover {
+   opacity: 0.8;
+}
+.button:focus {
+   outline: 2px solid var(--primary-color);
+}
