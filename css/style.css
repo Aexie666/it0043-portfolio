@@ -80,7 +80,9 @@ nav {
 nav a {
    color: var(--text-color);
    text-decoration: none;
+   transition: color 0.3s ease, transform 0.3s ease;
 }
+
 nav a:hover {
    text-decoration: underline;
 }
@@ -104,7 +106,10 @@ nav a:focus {
    color: white;
    text-decoration: none;
    border-radius: 5px;
+   transition: opacity 0.3s ease, transform 0.3s ease;
 }
+
+
 .button:hover {
    opacity: 0.8;
 }
@@ -130,3 +135,9 @@ nav a:focus {
    }
 }
 
+@media (prefers-reduced-motion: reduce) {
+   nav a,
+   .button {
+       transition: none;
+   }
+}
