@@ -70,10 +70,12 @@ footer {
 }
 
 nav {
-   display: flex;
-   gap: var(--medium-space);
-   padding: var(--small-space);
+  display: flex;
+  flex-direction: column;
+  gap: var(--medium-space);
+  padding: var(--small-space);
 }
+
 nav a {
    color: var(--text-color);
    text-decoration: none;
