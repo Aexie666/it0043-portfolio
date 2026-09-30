@@ -97,6 +97,13 @@ nav a:focus {
    background-color: white;
    border: 2px solid var(--primary-color);
    border-radius: 10px;
+
+   @media (max-width: 500px) {
+   .card {
+       margin: var(--small-space);
+       padding: var(--small-space);
+   }
+}
 }
 /* Button component */
 .button {
@@ -139,5 +146,18 @@ nav a:focus {
    nav a,
    .button {
        transition: none;
+   }
+}
+
+@media (max-width: 500px) {
+   nav {
+       gap: var(--small-space);
+   }
+}
+
+@media (min-width: 700px) {
+   nav {
+       flex-direction: row;
+       justify-content: center;
    }
 }
